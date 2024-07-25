@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="html">
+            <h1>O que é CSS?</h1>
+            <p>CSS, sigla para Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem de estilo usada para descrever a aparência e o layout de um documento HTML. Enquanto o HTML estrutura o conteúdo da página, o CSS controla como esse conteúdo será apresentado visualmente, permitindo que os desenvolvedores e designers separem o conteúdo da apresentação.</p>
+            
+            <h2>SELETORES</h2>
+            <p>Indicam quais elementos HTML o CSS deve estilizar. Os seletores podem ser tags, classes, IDs, ou mais complexos, como seletores de atributo ou pseudoclasses. Exemplo: < p >, .classe, #id, a:hover</p>
+            <img src="img/SELETOR.png" alt="Seletor de CSS">
+
+            <h3>PROPRIEDADES</h3>
+            <p>Definem o aspecto específico do estilo a ser aplicado, como cor, tamanho de fonte, margens, etc. Exemplo: color, font-size, margin, padding</p>
+            <img src="img/PROPRIEDADE.png" alt="Propriedade de CSS">
+
+            <h4>VALOR</h4>
+            <p>Especificam como as propriedades serão aplicadas. Cada propriedade pode ter um ou mais valores. Exemplo: red, 16px, auto, bold</p>
+            <img src="img/VALOR.png" alt="Valor de CSS">
+
+            <h5>CLASSES E IDS</h5>
+            <p>Uma classe é um identificador que pode ser aplicado a múltiplos elementos HTML. É útil para aplicar o mesmo estilo a um grupo de elementos.</p>
+            <img src="img/CLASS.png" alt="Classe de CSS">
+            <p>Sintaxe no CSS: Para atribuir uma classe a um elemento, utiliza-se o atributo class. Um elemento pode ter várias classes, separadas por espaços.</p>
+            <img src="img/CLASS CSS.png" alt="Classe no CSS">
+
+            <p>Um ID é um identificador único para um único elemento em uma página. Deve ser usado apenas uma vez por documento. É geralmente utilizado para estilizar um elemento específico de forma distinta ou para manipulações via JavaScript.</p>
+            <img src="img/ID.png" alt="ID de CSS">
+            <p>Sintaxe no CSS: Para atribuir um ID a um elemento, utiliza-se o atributo id.</p>
+            <img src="img/HTML.png" alt="HTML">
+            
+            <h6>CASCATA E ESPECIFIDADE</h6>
+            <p>O termo "cascata" refere-se à forma como o CSS lida com regras conflitantes, combinando-as e resolvendo qual regra aplicar em casos de conflito. O CSS usa três critérios principais para determinar a ordem de aplicação dos estilos:</p>
+            <ul>
+                <li><strong>Especificidade:</strong> É uma medida de quão específico é o seletor CSS que aplica o estilo. A especificidade é calculada com base em quatro componentes:
+                    <ul>
+                        <li>Inline styles: Estilos aplicados diretamente no elemento HTML usando o atributo style têm a maior especificidade.</li>
+                        <li>IDs: Seletor de ID (ex.: #meuId) tem alta especificidade.</li>
+                        <li>Classes, pseudo-classes e atributos: Seletor de classe (ex.: .minhaClasse), pseudo-classes (ex.: :hover), e seletor de atributos (ex.: [type="text"]) têm uma especificidade intermediária.</li>
+                        <li>Elementos e pseudo-elementos: Seletor de elemento (ex.: div, p) e pseudo-elementos (ex.: ::before, ::after) têm a menor especificidade.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
